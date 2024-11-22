@@ -1,0 +1,98 @@
+/*.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    color: #d32f2f; 
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .paragraph {
+    color: #5a5a5a;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: #d32f2f; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #b71c1c; 
+  }*/
+  /* Contenedor principal: centra todo vertical y horizontalmente */
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  margin: 0;
+}
+
+/* Estilo del título */
+.title {
+  color: #d32f2f; /* Rojo fuerte */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo del párrafo */
+.paragraph {
+  color: #5a5a5a;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* Estilo de los botones */
+.button,
+.preview-button {
+  background-color: #d32f2f; /* Rojo fuerte */
+  color: white;
+  border: none;
+  padding: 15px 30px; /* Más grandes */
+  font-size: 1.2rem; /* Fuente más grande */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px; /* Espacio entre botones */
+}
+
+.button:hover,
+.preview-button:hover {
+  background-color: #b71c1c; /* Rojo más oscuro */
+  transform: scale(1.05); /* Ligero aumento al pasar el mouse */
+}
+
+/* Estilo para la sección de previsualización */
+.preview-section {
+  display: flex;
+  flex-direction: column; /* Botón y la imagen apilados */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre el botón y la imagen */
+}
+
+/* Imagen del PDF */
+.pdf-image {
+  width: 150px; /* Tamaño más grande */
+  height: auto;
+  border: 1px solid #ddd; /* Opcional: borde */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombras para mejor visualización */
+}
